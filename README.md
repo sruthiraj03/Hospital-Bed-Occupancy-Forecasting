@@ -3,7 +3,7 @@
 
 Forecasting short-term hospital bed demand across three U.S. states to support healthcare staffing and resource planning.
 
-## 📌Overview
+## 📌 Overview
 
 Weekly hospital bed demand is hard to predict until you model it.
 
@@ -11,15 +11,13 @@ Using **CDC National Healthcare Safety Network (NHSN)** data (Aug 2020 – May 2
 
 By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic stabilization, the models achieve <2% MAPE on 13-week forecasts, supporting healthcare staffing and resource planning.
 
-## 📊Key Results
+## 📊 Key Results
 
 | State | Best Model | RMSE | MAPE |
 |-------|-----------|------|------|
 | Texas (TX) | ETS | 531.08 | 0.99% |
 | California (CA) | SARIMAX (2,0,0)(1,0,0,52) | 877.99 | 1.15% |
 | Florida (FL) | Seasonal ETS | 1,004.26 | 1.91% |
- 
-All three models achieved **sub-2% MAPE** over a 13-week forecast horizon.
 
 ## 🧠 Key Skills Demonstrated
 
@@ -29,18 +27,18 @@ All three models achieved **sub-2% MAPE** over a 13-week forecast horizon.
 - Model Selection, Evaluation, and Validation using AIC, BIC, RMSE, MAPE, and residual diagnostics
 - Translating forecasts into actionable insights for healthcare staffing and capacity planning
 
-## 💡Business Impact
+## 💡 Business Impact
 - **Texas:** Stable forecasts reduce the need for reactive surge planning and support efficient capacity management  
 - **California:** COVID-19 and influenza admissions act as leading indicators, enabling early staffing adjustments before peak demand  
 - **Florida:** Strong seasonal patterns enable proactive staffing and resource allocation ahead of predictable winter surges
 
-## ✨Highlights
+## ✨ Highlights
 
 - **COVID-19 admissions** were the strongest driver of occupancy surges nationally (r = 0.73), while influenza showed minimal correlation (r = -0.11)
 - **No single model fits all states**: ETS outperformed SARIMAX for Texas, while California required seasonal and exogenous components to capture its strong winter peaks
 - **Data quality issues handled**: corrected a Georgia data entry error (63M beds reported vs. ~31K actual) and removed post-May 2024 data following a mandatory-to-voluntary reporting shift that caused artificial declines
 
-## 🔧Methodology
+## 🔧 Methodology
 
 **Data**
 - **Source:** [Weekly Hospital Respiratory Data and Metrics](https://www.kaggle.com/datasets/noeyislearning/weekly-hospital-respiratory-data-and-metrics) (Kaggle / CDC NHSN)
@@ -64,9 +62,17 @@ All three models achieved **sub-2% MAPE** over a 13-week forecast horizon.
 5. Residual diagnostics (ACF, distribution check)
 6. 13-week out-of-sample forecast on best model
 
-## 🛠️Technologies
+## 🛠️ Technologies
  
 - **Python** - pandas, numpy, statsmodels, matplotlib, seaborn
 - **Models** - ARIMA, ETS, SARIMA, SARIMAX
 - **Environment** - Google Colab
+
+## ▶️ How to Run
+
+1. Clone the repository  
+2. Install dependencies: `pip install -r requirements.txt`  
+3. Run the notebook (`notebook.ipynb`)  
+
+Dataset available via link in Methodology section.
 
