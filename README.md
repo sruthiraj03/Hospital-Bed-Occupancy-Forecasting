@@ -34,7 +34,7 @@ By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic sta
 
 ## ✨ Highlights
 
-- **COVID-19 admissions** were the strongest driver of occupancy surges nationally (r = 0.73), while influenza showed minimal correlation (r = -0.11)
+- **COVID-19 admissions** were the strongest driver of occupancy surges nationally (r = 0.67), while influenza showed a comparatively weaker correlation (r = 0.36)
 - **No single model fits all states**: ETS outperformed SARIMAX for Texas, while California required seasonal and exogenous components to capture its strong winter peaks
 - **Data quality issues handled**: corrected a Georgia data entry error (63M beds reported vs. ~31K actual) and removed post-May 2024 data following a mandatory-to-voluntary reporting shift that caused artificial declines
 
@@ -67,6 +67,12 @@ By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic sta
 - **Python:** pandas, numpy, statsmodels, matplotlib, seaborn
 - **Models** - ARIMA, ETS, SARIMA, SARIMAX
 - **Environment** - Google Colab
+
+## ⚠️ Limitations
+
+- Models assume historical patterns persist, which may shift as post-pandemic dynamics evolve  
+- Forecasts could not be validated beyond May 2024 due to changes in reporting policy  
+- Analysis is at the state level and does not capture hospital-level capacity constraints
 
 ## ▶️ How to Run
 
