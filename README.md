@@ -5,11 +5,11 @@ Forecasting short-term hospital bed demand across three U.S. states to support h
 
 ## 📌 Overview
 
-Weekly hospital bed demand is hard to predict until you model it.
+Hospital bed demand is highly dynamic and difficult to anticipate without data-driven modeling.
 
 Using **CDC National Healthcare Safety Network (NHSN)** data (Aug 2020 – May 2024), this project forecasts inpatient bed occupancy across California, Florida, and Texas - the three highest average bed utilization states in the U.S.
 
-By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic stabilization, the models achieve <2% MAPE on 13-week forecasts, supporting healthcare staffing and resource planning.
+By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic stabilization, the models achieve <2% MAPE on 13-week forecasts, supporting healthcare staffing and resource planning. These forecasts enable hospitals to move from reactive to proactive capacity planning.
 
 ## 📊 Key Results
 
@@ -64,7 +64,7 @@ By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic sta
 
 ## 🛠️ Technologies
  
-- **Python** - pandas, numpy, statsmodels, matplotlib, seaborn
+- **Python:** pandas, numpy, statsmodels, matplotlib, seaborn
 - **Models** - ARIMA, ETS, SARIMA, SARIMAX
 - **Environment** - Google Colab
 
