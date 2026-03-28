@@ -71,8 +71,8 @@ By capturing COVID-19 surges, seasonal respiratory cycles, and post-pandemic sta
 ## ▶️ How to Run
 
 1. Clone the repository  
-2. Install dependencies: `pip install -r requirements.txt`  
-3. Run the notebook (`notebook.ipynb`)  
+2. Install dependencies: pip install -r requirements.txt 
+3. Run the notebook (notebook.ipynb)  
 
 Dataset available via link in Methodology section.
 
